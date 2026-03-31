@@ -315,7 +315,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif product:
         await msg.reply_text(
             f"{product['emoji']} *{product['name']}*\n"
-            f"📦 Size: {product['size']} — {product['price']}\n"
+            f"📦 {product['size']} — {product['price']}\n"
             f"📋 {product['use']}\n\n"
             f"Would you like to order some? Just let me know how many vials! 👇",
             parse_mode="Markdown"
@@ -359,4 +359,4 @@ def main():
 
 
 if __name__ == "__main__":
-    ma
+    main()
